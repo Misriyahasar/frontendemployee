@@ -1,0 +1,33 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Employee Name</th>
+            <th>Apply Date</th>
+            <th>Nature Of Leave</th>
+            <th>First Day</th>
+            <th>Last Day</th>
+            <th>Number Of Days</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of employeeArray">
+            <td>{{item.full_name}}</td>
+            <td>{{item.applyDate}}</td>
+            <td>{{item.natureOfLeave}}</td>
+            <td>{{item.firstDay}}</td>
+            <td>{{item.lastDay}}</td>
+            <td>{{item.numberOfDays}}</td>
+            <td>{{item.status}}</td>
+            <td>
+                <button class="btn btn-primary">
+                    <i class="bi bi-pencil-square" (click)="navigateToEdit(item.id)"></i>Approve</button>
+                <button class="btn btn-danger">
+                    <i class="bi bi-archive" (click)="delete(item.id)"></i>Reject</button>
+            </td>
+        </tr>
+                 
+    </tbody>
+</table>
+
+

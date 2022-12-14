@@ -1,0 +1,41 @@
+
+   <!-- <div style="text-align:center;">
+    <button type="button" class="btn btn-primary" (click)="navigate()">
+        <i class="bi bi-plus-lg"></i>
+        Create
+    </button> -->
+
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Employee ID</th>
+            <th>Employee Name</th>
+            <th>Contact</th>
+            <th>Email</th>
+            <th>Designation</th>
+            <th>Reporting_to</th>
+            <th>Work Location</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of employeeArray">
+            <td>{{item.id}}</td>
+            <td>{{item.full_name}}</td>
+            <td>{{item.contact_number}}</td>
+            <td>{{item.email}}</td>
+            <td>{{item.position}}</td>
+            <td>{{item.reporting_to}}</td>
+            <td>{{item.work_location}}</td>
+            
+            <td>
+                <button class="btn btn-primary">
+                    <i class="bi bi-pencil-square" (click)="navigateToEdit(item.id)"></i>Edit</button>
+                <button class="btn btn-danger">
+                    <i class="bi bi-archive" (click)="delete(item.id)"></i>Delete</button>
+            </td>
+        </tr>
+                
+    </tbody>
+</table>

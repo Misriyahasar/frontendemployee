@@ -1,0 +1,33 @@
+form{
+    /* background: linear-gradient(45deg,gold,white,black); */
+    width: 40%;
+    background-image: url("\assets\images\projectfront1.jfif");
+    padding: 50px 30px;
+    border-radius: 10px;
+    align-content: center;
+    align-items: center;
+   }
+   label{
+     width: 140px;
+     display: inline-block;
+     margin: 0.2cm;
+     font-size: 16px;
+     font-weight: bolder;
+   }
+   input{
+     padding: 4px;
+     margin: 5px;
+     font-size: 16px;
+     border-radius: 10px;
+     border: 1px solid black;
+     width: 7cm;
+   }
+   button{
+     margin-top: 7px;
+  
+     font-weight: bold;
+     padding: 4px;
+     font-size: 14px;
+    
+   }
+   

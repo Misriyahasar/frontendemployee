@@ -1,0 +1,34 @@
+
+<div class="card" style="height: 50vh; margin: 5rem;">
+    <form #leaveForm="ngForm" (ngSubmit)="leaveForm.valid&&onSubmit()">
+        <div class="row">
+            <div class="col-md-6">
+            <label>Apply Date</label>
+            <input type="date" name="date" required #id="ngModel" class="form-control" [(ngModel)]="data.applyDate">
+            </div>
+            <div class="col-md-6">
+            <label>Nature Of Leave</label>
+            <input type="text" name="nature" required #name="ngModel" class="form-control" [(ngModel)]="data.natureOfLeave">
+            </div>
+            <div class="col-md-6">
+                <label>First Day</label>
+                <input type="date" name="fdate" required #name="ngModel" class="form-control" [(ngModel)]="data.firstDay">
+                </div>
+            <div class="col-md-6">
+            <label>Last Day</label>
+            <input type="date" name="ldate" required #name="ngModel" class="form-control" [(ngModel)]="data.lastDay">
+            </div>
+            <div class="col-md-6">
+            <label>Number Of Days</label>
+            <input type="number" name="days" required  class="form-control" [(ngModel)]="data.numberOfDays">
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div style="text-align: center;">
+            <button type="submit" class="btn btn-success">Submit</button>
+        </div>
+    </form>
+</div>
+
